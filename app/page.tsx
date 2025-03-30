@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Hero from "@/components/ui/hero/Hero";
+import Hero from "@/components/hero/Hero";
 // import { supabase } from "@/utils/supabase";
 // import { Loader2, LogOut } from "lucide-react";
 // import TodoList from "@/components/todo-list";

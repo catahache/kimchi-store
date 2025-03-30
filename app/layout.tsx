@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Unbounded, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const unbounded = Unbounded({
   weight: ["400", "700"],
@@ -43,12 +45,11 @@ export default function RootLayout({
           // attribute="class" defaultTheme="system" enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
   );
 }
-
-import "./globals.css";
-import Navbar from "@/components/ui/navbar/Navbar";

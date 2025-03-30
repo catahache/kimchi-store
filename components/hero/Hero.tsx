@@ -1,4 +1,5 @@
 import * as React from "react";
+import NeobrutalistCTA from "../ui/neobrutalism/neobrutalist-cta";
 
 const Hero = () => {
   return (
@@ -26,12 +27,7 @@ const Hero = () => {
               Simple, flexible, and designed for modern teams.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-blue-50 transition duration-300 text-lg shadow-lg">
-                Get Started
-              </button>
-              <button className="bg-transparent text-white border border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:bg-opacity-10 transition duration-300 text-lg">
-                Learn More
-              </button>
+              <NeobrutalistCTA text="holasdfsdfsdfsdf" onClick={() => {}} />
             </div>
           </div>
 

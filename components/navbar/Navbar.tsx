@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex h-16 items-center justify-between">
+    <div className="container flex h-16 items-center justify-between">
       <div className="flex items-center gap-4">
         <Link href={"/"} className="text-xl font-bold">
           <span className="text-primary">Kimchi Store</span>
