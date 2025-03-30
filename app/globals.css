@@ -33,6 +33,10 @@
     --ring: 0 0% 0%;
 
     --radius: 0.5rem;
+
+    /* Font family variables */
+    --font-heading: var(--font-unbounded);
+    --font-body: var(--font-syne);
   }
 
   .dark {
@@ -72,6 +76,24 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom font classes */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
 }
 

@@ -74,9 +74,9 @@ export default function Home() {
 
       <main className="container max-w-3xl mx-auto py-8 px-4 flex flex-col">
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold mb-2">My Tasks</h1>
+          <h1 className="text-3xl font-heading font-bold mb-2">My Tasks</h1>
           <div className="flex items-center justify-center gap-1 text-sm text-muted-foreground">
-            <span>{user.email}</span>
+            <span className="font-body">{user.email}</span>
             <Button
               variant="ghost"
               size="icon"

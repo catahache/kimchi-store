@@ -1,11 +1,21 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Unbounded, Syne } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
-const geist = Geist({
+const unbounded = Unbounded({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-unbounded",
+})
+
+const syne = Syne({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-syne",
 })
 
 export const metadata: Metadata = {
@@ -23,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={geist.className}>
+    <html lang="en" suppressHydrationWarning className={`${unbounded.variable} ${syne.variable}`}>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

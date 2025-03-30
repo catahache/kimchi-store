@@ -19,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ["var(--font-unbounded)"],
+        body: ["var(--font-syne)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

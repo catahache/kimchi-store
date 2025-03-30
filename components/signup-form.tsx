@@ -53,8 +53,8 @@ export default function SignUpForm() {
   return (
     <div className="w-full max-w-md space-y-8">
       <div className="space-y-2 text-center">
-        <h1 className="text-4xl font-semibold tracking-tight text-white">Create an account</h1>
-        <p className="text-lg text-gray-400">Sign up to get started</p>
+        <h1 className="text-4xl font-heading font-semibold tracking-tight text-white">Create an account</h1>
+        <p className="text-lg font-body text-gray-400">Sign up to get started</p>
       </div>
 
       <form onSubmit={handleSignUp} className="space-y-6">
@@ -97,7 +97,7 @@ export default function SignUpForm() {
         <Button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#2b725e] hover:bg-[#235e4c] text-white py-6 text-lg font-medium rounded-lg h-[60px]"
+          className="w-full bg-[#2b725e] hover:bg-[#235e4c] text-white py-6 text-lg font-heading font-medium rounded-lg h-[60px]"
         >
           {loading ? (
             <>

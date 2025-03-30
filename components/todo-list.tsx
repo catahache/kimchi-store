@@ -167,7 +167,7 @@ export default function TodoList({ initialTodos = [] }: { initialTodos?: Todo[] 
 
       <ul className="space-y-2 min-h-[200px]">
         {todos.length === 0 ? (
-          <li className="text-center text-muted-foreground py-4">No todos yet. Add one above!</li>
+          <li className="text-center font-body text-muted-foreground py-4">No todos yet. Add one above!</li>
         ) : (
           todos.map((todo) => {
             const isPending = pendingTodos[todo.id]
@@ -187,7 +187,7 @@ export default function TodoList({ initialTodos = [] }: { initialTodos?: Todo[] 
                   />
                   <label
                     htmlFor={`todo-${todo.id}`}
-                    className={`text-sm ${todo.is_complete ? "line-through text-muted-foreground" : ""}`}
+                    className={`text-sm font-body ${todo.is_complete ? "line-through text-muted-foreground" : ""}`}
                   >
                     {todo.task}
                   </label>
